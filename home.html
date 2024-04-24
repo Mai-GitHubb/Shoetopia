@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./CSS/grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/carousel.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/men.css">
+    <link href="https://css.gg/css?=|gender-female|gender-male|shopping-cart" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a478910258.js" crossorigin="anonymous"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="home.html" class="nav__logo" style="font-size: 150%;">
+                    <span class="mdi--shoe-sneaker"></span>SHOETOPIA
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="home.html" class="nav__link">Home</a></li>
+
+                    <!--=============== DROPDOWN MEN ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionM" style="color: black;">MEN</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">PARTY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">SPORTY
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <!--=============== DROPDOWN WOMEN ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionW" style="color: black;">WOMEN</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">PARTY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">SPORTY
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN KIDS ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionK" style="color: black;">KIDS</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">PARTY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">SPORTY
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href="aboutus.html" class="nav__link">ABOUT US</a></li>
+                    <li><a href="cart.html" class="nav__link"><i class="ri-shopping-cart-2-line"
+                                style="font-size: 127%;"></i></a></li>
+                    <li><a class="nav__link" id='welcome' style="cursor: default;">
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <center>
+        <div class="heading-container">
+            <h3 id="h3" class="jersey-25-regular">Step into Comfort, Step into Style</h3>
+            <i class="fa-solid fa-shoe-prints" style="scale: 1.2; rotate: 270deg;"></i>
+        </div>
+
+        <main>
+            <script>document.getElementById('h3').innerHTML = document.getElementById('h3').innerText.toUpperCase()</script>
+            <section aria-label="Newest Photos">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./ASSETS/images/carousel1.jpg" alt="Image #1">
+                        </li>
+                        <li class="slide">
+                            <img src="./ASSETS/images/carousel2.webp" alt="Image #2">
+                        </li>
+                        <li class="slide">
+                            <img src="./ASSETS/images/carousel3.avif" alt="Image #3">
+                        </li>
+                    </ul>
+                    <div class="dots-container"></div> <!-- Container for dots -->
+                </div>
+            </section>
+
+
+
+            <div id="main-part">
+                <div class="category" id="sectionM">
+                    <div id="headings">
+                        <h2>MEN</h2><span class='gg-gender-male'></span>
+                    </div><br>
+                    <div class="image-cards">
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/partyM.jpg" alt="">
+                            <div class="image-category">Party</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/casualM.jpg" alt="">
+                            <div class="image-category">Casual</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/formalM.jpg" alt="">
+                            <div class="image-category">Formal</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/sportyM.jpg" alt="">
+                            <div class="image-category">Sporty</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="category" id="sectionW">
+                    <div id="headings">
+                        <h2>WOMEN</h2><span class='gg-gender-female'></span>
+                    </div><br>
+                    <div class="image-cards">
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/partyW.jpg" alt="">
+                            <div class="image-category">Party</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/casualW.jpg" alt="">
+                            <div class="image-category">Casual</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/fromalW.jpg" alt="">
+                            <div class="image-category">Formal</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/sportyW.jpg" alt="">
+                            <div class="image-category">Sporty</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="category" id="sectionK">
+                    <div id="headings">
+                        <h2>KIDS</h2><i class="em em-baby" aria-role="presentation" aria-label="BABY"
+                            style='width: 1.5%;'></i>
+                    </div><br>
+                    <div class="image-cards">
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/partyK.jpg" alt="">
+                            <div class="image-category">Party</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/casualK.jpg" alt="">
+                            <div class="image-category">Casual</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/formlK.jpg" alt="">
+                            <div class="image-category">Formal</div>
+                        </a>
+                        <a href="grid.html" class="image-card">
+                            <img src="./ASSETS/images/homeImages/sportyK.jpg" alt="">
+                            <div class="image-category">Sporty</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 SHOETOPIA</p>
+            <p>All rights reserved.</p>
+        </footer>
+
+
+
+
+    </center>
+    <script src="./JS/carousel.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="./JS/header.js"></script>
+
+
+
+</body>
+
+</html>

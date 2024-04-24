@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING MENU</title>
+    <link rel="stylesheet" href="./CSS/grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/carousel.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/men.css">
+    <link href="https://css.gg/css?=|gender-female|gender-male|shopping-cart" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a478910258.js" crossorigin="anonymous"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo" style="font-size: 150%;">
+                    <span class="mdi--shoe-sneaker"></span>SHOETOPIA
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="home.html" class="nav__link">Home</a></li>
+
+                    <!--=============== DROPDOWN MEN ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionM" style="color: black;">MEN</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <!--=============== DROPDOWN WOMEN ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionW" style="color: black;">WOMEN</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN KIDS ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionK" style="color: black;">KIDS</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="nav__link">ABOUT US</a></li>
+                    <li><a href="cart.html" class="nav__link"><i class="ri-shopping-cart-2-line"
+                                style="font-size: 127%;"></i></a></li>
+                    <li><a class="nav__link" id='welcome' style="cursor: default;;">
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="products">
+            <div class="product">
+                <img src="./ASSETS/images/grid/1.jpg" alt="Product 1">
+                <h4>Men Running Shoes JOGFLOW 500.1- Black</h4>
+                <p style="padding: 5px;">We designed these shoes to prevent the risk of injury and provide you with maximum sensation during your runs of up to 25km.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $10</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 10, './ASSETS/images/grid/1.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/2.jpg" alt="Product 2">
+                <h4>Generic Men's Running Shoe</h4>
+                <p style="padding: 5px;">Elevate your style with this classy pair of Running Shoe on Amazon. Featuring a contemporary refined design with exceptional comfort.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $20</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 20, './ASSETS/images/grid/2.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/3.jpg" alt="Product 3">
+                <h4>Women Off White Lace-Up Running Shoes</h4>
+                <p style="padding: 5px;">A pair of off white, blue and pink running shoes, has regular styling, lace-ups detail.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $30</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 30, './ASSETS/images/grid/3.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/4.jpg" alt="Product 4">
+                <h4>CITY-RIDE Black Men's Sneakers</h4>
+                <p style="padding: 5px;">Designed to give you a unique and stylish look, whether you're on the road or off it.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $25</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 25, './ASSETS/images/grid/4.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/5.jpg" alt="Product 5">
+                <h4>CLYMB Running Shoes For Men (Black)</h4>
+                <p style="padding: 5px;">Ultra Light, Comfortable, Durable, Ready To Take On Challenges</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $35</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 35, './ASSETS/images/grid/5.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/6.jpg" alt="Product 6">
+                <h4>FORUM MID RT BASICS Sneakers For Men  (White)</h4>
+                <p style="padding: 5px;">A narrow toe cut puts a modern, stylish spin on this iconic shoe</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $45</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 45, './ASSETS/images/grid/6.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/7.jpg" alt="Product 7">
+                <h4>Premium Sports Shoe For Boys Walking Shoes For Men  (Grey)</h4>
+                <p style="padding: 5px;">Walking Shoes, PVC, Lace-ups</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $55</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 55, './ASSETS/images/grid/7.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/8.jpg" alt="Product 8">
+                <h4>Men Running Shoes Active Grip (Green)</h4>
+                <p style="padding: 5px;">Designed to run comfortably up to 20km a week.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $65</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 65, './ASSETS/images/grid/8.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/9.jpg" alt="Product 9">
+                <h4>Piloti Driving Shoes for Men, Shift Italian Suede Performance</h4>
+                <p style="padding: 5px;">Handmade in Europe from supple top-grain leathers and suedes</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $75</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 75, './ASSETS/images/grid/9.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/10.jpg" alt="Product 10">
+                <h4>BROOKS Adrenaline GTS 23 Men's Road Running Shoes</h4>
+                <p style="padding: 5px;">Offers a perfect balance of support and softness that results in a smooth ride for miles at every speed.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $85</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 85, './ASSETS/images/grid/10.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/11.jpg" alt="Product 11">
+                <h4>Sports Shoes Running Shoes For Men  (Black, Grey)</h4>
+                <p style="padding: 5px;">Exclusive design and durable materials every step feels light and breezy.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $95</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 95, './ASSETS/images/grid/11.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/12.jpg" alt="Product 12">
+                <h4>RedTape Casual Sneaker Shoes For Men</h4>
+                <p style="padding: 5px;">Upgraded Comfort with Cushioned Insole and Slip-Resistant Sole</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $105</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 105, './ASSETS/images/grid/12.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/13.jpg" alt="Product 13">
+                <h4>Men Black & Green Clubpro Woven Design Running Shoes</h4>
+                <p style="padding: 5px;">Minimalist Style with utmost comfort.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $115</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 115, './ASSETS/images/grid/13.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/14.jpg" alt="Product 14">
+                <h4>Men's Cosko Sports Running,Walking,Gym,Training Sneaker Shoes</h4>
+                <p style="padding: 5px;">New, Breathable knitted upper which is easily washable, perfect for all seasons</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $125</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 125, './ASSETS/images/grid/14.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="./ASSETS/images/grid/15.jpg" alt="Product 15">
+                <h4>VAN HEUSEN Lace Up For Men (Brown)</h4>
+                <p style="padding: 5px;">Lend finesse to your dressing with these immaculate Brown Lace Up Shoes from Van Heusen.</p>
+                <p style="font-size: 1rem; font-weight: bold; padding: 5px;">Price: $135</p>
+                <button onclick="addToCart(this.parentElement.querySelector('h4').innerText, 135, './ASSETS/images/grid/15.jpg')" onmousedown="showMessage()">Add to Cart</button>
+            </div>
+            
+                        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SHOETOPIA</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+    <script src="./JS/cart.js"></script>
+    <script src="./JS/header.js"></script>
+</body>
+
+</html>

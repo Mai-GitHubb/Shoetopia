@@ -1,0 +1,250 @@
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/carousel.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/men.css">
+    <link href="https://css.gg/css?=|gender-female|gender-male|shopping-cart" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a478910258.js" crossorigin="anonymous"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+        *{
+            font-family: "Montserrat", sans-serif;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-card {
+            scale: 1.05;
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0px 13px rgba(135, 255, 141, 0.703);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: scale(1.06);
+            background-color: antiquewhite;
+            cursor: default;
+        }
+
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            overflow: hidden;
+        }
+
+        .info h2 {
+            margin-top: 0;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="home.html" class="nav__logo" style="font-size: 150%;">
+                    <span class="mdi--shoe-sneaker"></span>SHOETOPIA
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="home.html" class="nav__link">Home</a></li>
+
+                    <!--=============== DROPDOWN MEN ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionM" style="color: black;">MEN</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">PARTY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">SPORTY
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <!--=============== DROPDOWN WOMEN ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionW" style="color: black;">WOMEN</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">PARTY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">SPORTY
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN KIDS ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="#sectionK" style="color: black;">KIDS</a><i
+                                class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="grid.html" class="dropdown__link">CASUAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">PARTY
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">FORMAL
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html" class="dropdown__link">SPORTY
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href="aboutus.html" class="nav__link">ABOUT US</a></li>
+                    <li><a href="cart.html" class="nav__link"><i class="ri-shopping-cart-2-line"
+                                style="font-size: 127%;"></i></a></li>
+                    <li><a class="nav__link" id='welcome' style="cursor: default;">
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-card">
+            <div class="avatar">
+                <img src="./ASSETS/images/ABOUTUS/Maitreya.jpg" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <h2>Maitreya Chavan</h2>
+                <p>Registration Number: 22BCE2116</p>
+                <p>Phone: 9356281724</p>
+                <p>Email: maitreya.shirish2022@vitstudent.ac.in</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="contact-card">
+            <div class="avatar">
+                <img src="./ASSETS/images/ABOUTUS/Aditya.jpg" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <h2>Aditya Singh</h2>
+                <p>Registration Number: 22BCT0248</p>
+                <p>Phone: 9726472289</p>
+                <p>Email: aditya.singh2022d@vitstudent.ac.in</p>
+            </div>
+        </div>
+        <br>
+        <div class="contact-card">
+            <div class="avatar">
+                <img src="./ASSETS/images/ABOUTUS/kanishka.jpg" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <h2>Kanishka Sahu</h2>
+                <p>Registration Number: 22BCE2749</p>
+                <p>Phone: 9340310533</p>
+                <p>Email: kanishka.sahu2022@vitstudent.ac.in</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SHOETOPIA</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+    <script src="./JS/header.js"></script>
+    <script src="./JS/cart.js"></script>
+    <script src="./JS/men.js    "></script>
+</body>
+
+</html>
