@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll("[data-carousel-button]");
     const slides = document.querySelectorAll(".slide");
     const dotsContainer = document.querySelector(".dots-container");
-    let currentIndex = 0; // Track the index of the current active slide
+    let currentIndex = 0;
 
     // Function to move to the next slide
     const moveToNextSlide = () => {
