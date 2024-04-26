@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
 }
 
 .login-box {
-    background-color: #f9f9f9; /* Initial background color */
+    background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -31,12 +31,12 @@ body {
     from {
         opacity: 0;
         transform: translateY(-200px);
-        background-color: rgba(249, 249, 249, 0); /* Initial transparent background */
+        background-color: rgba(249, 249, 249, 0);
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        background-color: #f9f9f9; /* Final background color */
+        background-color: #f9f9f9;
     }
 }
 
