@@ -6,13 +6,13 @@ function signin() {
       return;
   }
   localStorage.setItem("username", username);
-  window.location.href = "home.html"; // Redirect to home.html
+  window.location.href = "home.html"; 
 }
 
 function guest() {
   var username = 'Guest';
   localStorage.setItem("username", username);
-  window.location.href = "home.html"; // Redirect to home.html
+  window.location.href = "home.html";
 }
 
 
