@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-/* Main Content */
 main {
   display: flex;
   justify-content: space-between;
@@ -20,7 +19,6 @@ img{
   height: 12rem;
 }
 
-/* Cart Items */
 #cart-items {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +34,7 @@ img{
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0px 10px rgb(200 255 154);
-  font-weight: bold; /* Bold text */
+  font-weight: bold;
 }
 
 
@@ -54,7 +52,7 @@ img{
   background-color: #ff4d4d;
 }
 
-/* Cart Summary */
+
 .cart-summary {
   flex-basis: 30%;
   background-color: #f4f4f4;
@@ -78,7 +76,6 @@ img{
   background-color: #45a049;
 }
 
-/* Footer */
 footer {
   background-color: #333;
   color: #fff;
