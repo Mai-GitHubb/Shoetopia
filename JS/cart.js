@@ -103,5 +103,3 @@ function showMessage(
     messageElement.remove();
   }, 1900);
 }
-
-
